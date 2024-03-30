@@ -69,6 +69,9 @@ body {
 .home-content h2 {
     font-size: 24px;
     font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
 }
 
 .home-content h2:nth-of-type(1) {
@@ -88,6 +91,9 @@ body {
 .home-content h3 {
     font-size: 16px;
     font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
 }
 
 .home-sci a {
@@ -146,6 +152,17 @@ body {
     0% {
         opacity: 0;
         transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
     }
     100% {
         opacity: 1;
