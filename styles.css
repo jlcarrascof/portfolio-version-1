@@ -41,6 +41,8 @@ body {
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
 }
 
 .navbar a:hover {
@@ -137,5 +139,16 @@ body {
     100% {
         opacity: 1;
         transform: translateX(0px);
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
