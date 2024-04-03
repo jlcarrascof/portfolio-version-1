@@ -160,6 +160,13 @@ body {
     0 0 200px cyan;
 }
 
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
 @keyframes slideRight {
     0% {
         opacity: 0;
