@@ -7,6 +7,7 @@
 
 body {
     color: #ededed;
+    background: #081b29;
 }
 
 .header {
@@ -55,7 +56,7 @@ body {
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url(./assets/Segundo.png) no-repeat;
+    background: url(./assets/Segundo-removebg.png) no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -165,6 +166,14 @@ body {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
+}
+
+.about-img img {
+    padding-bottom: 20%;
+    max-width: 480px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
 }
 
 @keyframes slideRight {
